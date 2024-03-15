@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MY PORTFOLIO</title>
+    <link rel="stylesheet" href="styleproject.css" />
     <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/527eaedd2c.js"
@@ -13,40 +14,57 @@
   <body>
     <header>
       <div id="logoName">Mark.dev</div>
+
       <div id="navLinks">
         <li><a href="#homePage">Home</a></li>
         <li>Project</li>
         <li>About</li>
         <li>Contact</li>
-        <!-- <a href=" ">Home</a>
-        <a href="">Projects</a>
-        <a href="">About</a>
-        <a href="">Contact</a> -->
+      </div>
+      <div id="burgerMenuContainer">
+        <i class="fas fa-bars fa-lg" id="menuBars" onclick=" toggleMenu()"></i>
+        <div id="menuList">
+          <li><a href="#homePage">Home</a></li>
+          <li>Project</li>
+          <li>About</li>
+          <li>Contact</li>
+        </div>
       </div>
     </header>
     <div id="homePage">
       <div id="landingPage">
         <div id="landing-first-div">
           <div>
-            <h1 id="namePosition">WEB DEVELOPER<br />FRONT-END</h1>
+            <h1 id="namePosition">
+              WEB DEVELOPER<br />FRONT-END
+              <i class="fa-solid fa-laptop-code fa-sm"></i>
+            </h1>
             <h3 id="introMessage">
               "Hi, I'm Mark Leo Bostrillo, a passionate front-end web developer
-              based in Tacloban City, Philippines.
+              based in Tacloban City, Philippines.<i
+                class="fa-solid fa-map-pin fa-xs"
+              ></i>
             </h3>
-            <div>
+            <div id="iconDiv">
               <i class="fa-brands fa-linkedin fa-2xl"></i>
               <i class="fa-brands fa-github fa-2xl"></i>
             </div>
           </div>
-          <div>
+          <div id="myPhotoContainer">
             <img src="assets/profileImageSix.png" alt="" id="profileImageSix" />
           </div>
         </div>
-        <div id="landing-second-div">landing-second-dev</div>
+        <div id="landing-second-div">
+          TECH STACK |
+          <i class="fa-brands fa-html5 fa-2xl"></i>
+          <i class="fa-brands fa-css3 fa-2xl"></i>
+          <i class="fa-brands fa-js fa-2xl"></i>
+        </div>
       </div>
     </div>
     <div id="projectPage">PROJECT</div>
     <div id="aboutPage">ABOUT</div>
     <div id="contactPage">CONTACT</div>
+    <script src="script.js"></script>
   </body>
 </html>
