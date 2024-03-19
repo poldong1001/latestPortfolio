@@ -1,0 +1,58 @@
+#aboutPage {
+  background-color: whitesmoke !important;
+  height: 100vh !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#aboutContainer {
+  /* background-color: red !important; */
+  max-width: 1200px;
+  display: flex;
+  gap: 30px;
+  flex-direction: row;
+}
+@media only screen and (max-width: 1200px) {
+  #aboutContainer {
+    flex-direction: column;
+    /* padding: 30px; */
+    padding-top: 80px;
+    max-width: 300px;
+    /* justify-content: center; */
+    align-items: center;
+  }
+}
+#aboutImage {
+  border-radius: 20px;
+}
+@media only screen and (max-width: 1200px) {
+  #aboutImage {
+    max-width: 90%;
+  }
+}
+#firstWords {
+  font-size: 25px;
+  color: rgb(255, 85, 0);
+}
+#secondWords {
+  color: rgb(45, 44, 44);
+  font-size: 30px;
+}
+@media only screen and (max-width: 1200px) {
+  #secondWords {
+    font-size: 20px;
+  }
+}
+#thirdWords {
+  font-size: 20px;
+  display: flex;
+  text-align: justify;
+  color: rgb(86, 82, 82);
+
+  font-weight: bold;
+}
+@media only screen and (max-width: 1200px) {
+  #thirdWords {
+    font-size: 15px;
+  }
+}

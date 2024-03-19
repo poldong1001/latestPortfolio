@@ -6,6 +6,9 @@
     <title>MY PORTFOLIO</title>
     <link rel="stylesheet" href="styleproject.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styleabout.css" />
+    <link rel="stylesheet" href="stylecontact.css" />
+    <link rel="stylesheet" href="stylefooter.css" />
     <script
       src="https://kit.fontawesome.com/527eaedd2c.js"
       crossorigin="anonymous"
@@ -16,55 +19,132 @@
       <div id="logoName">Mark.dev</div>
 
       <div id="navLinks">
-        <li><a href="#homePage">Home</a></li>
-        <li>Project</li>
-        <li>About</li>
-        <li>Contact</li>
+        <li><a href="#homePage" class="linkPages">Home</a></li>
+        <li><a href="#projectPage" class="linkPages">Project</a></li>
+        <li><a href="#aboutPage" class="linkPages">About</a></li>
+        <li><a href="#contactPage" class="linkPages">Contact</a></li>
       </div>
       <div id="burgerMenuContainer">
         <i class="fas fa-bars fa-lg" id="menuBars" onclick=" toggleMenu()"></i>
         <div id="menuList">
-          <li><a href="#homePage">Home</a></li>
-          <li>Project</li>
-          <li>About</li>
-          <li>Contact</li>
+          <li><a href="#homePage" class="linkPages">Home</a></li>
+          <li><a href="#projectPage" class="linkPages">Project</a></li>
+          <li><a href="#aboutPage" class="linkPages">About</a></li>
+          <li><a href="#contactPage" class="linkPages">Contact</a></li>
         </div>
       </div>
     </header>
     <div id="homePage">
       <div id="landingPage">
-        <div id="landing-first-div">
-          <div>
+        <div id="landFirstCont">
+          <div id="landFirstContFirstChild">
             <h1 id="namePosition">
               WEB DEVELOPER<br />FRONT-END
               <i class="fa-solid fa-laptop-code fa-sm"></i>
             </h1>
             <h3 id="introMessage">
               "Hi, I'm Mark Leo Bostrillo, a passionate front-end web developer
-              based in Tacloban City, Philippines.<i
-                class="fa-solid fa-map-pin fa-xs"
-              ></i>
+              based in Tacloban City, Philippines.
+              <i class="fa-solid fa-map-pin fa-xs"></i>
             </h3>
             <div id="iconDiv">
-              <i class="fa-brands fa-linkedin fa-2xl"></i>
-              <i class="fa-brands fa-github fa-2xl"></i>
+              <a
+                href="https://www.linkedin.com/in/mark-leo-bostrillo-2a839b263/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin fa-2xl"></i
+              ></a>
+              <a href="https://github.com/poldong1001" target="_blank"
+                ><i class="fa-brands fa-github fa-2xl"></i
+              ></a>
             </div>
           </div>
           <div id="myPhotoContainer">
             <img src="assets/profileImageSix.png" alt="" id="profileImageSix" />
           </div>
         </div>
-        <div id="landing-second-div">
+        <div id="landSecondCont">
           TECH STACK |
-          <i class="fa-brands fa-html5 fa-2xl"></i>
+          <i class="fa-brands fa-html5 fa-2xl tectTools"></i>
           <i class="fa-brands fa-css3 fa-2xl"></i>
           <i class="fa-brands fa-js fa-2xl"></i>
         </div>
       </div>
     </div>
     <div id="projectPage">PROJECT</div>
-    <div id="aboutPage">ABOUT</div>
-    <div id="contactPage">CONTACT</div>
+    <div id="aboutPage">
+      <div id="aboutContainer">
+        <img src="assets/aboutImage.jpg" alt="" id="aboutImage" />
+        <div id="statementContainer">
+          <h3 id="firstWords">About Me</h3>
+          <h3 id="secondWords">
+            As a passionate front-end web developer based in Tacloban City,
+            Philippines,
+          </h3>
+          <h3 id="thirdWords">
+            I thrive on crafting beautiful and engaging user interfaces that
+            bring ideas to life. With a keen eye for design and a deep
+            understanding of HTML, CSS, and JavaScript, I specialize in creating
+            seamless and intuitive web experiences. Whether it's building
+            responsive layouts, optimizing performance, or implementing
+            interactive features, I am committed to delivering high-quality
+            solutions that exceed expectations. With a dedication to continuous
+            learning and staying up-to-date with the latest technologies and
+            trends, I am driven to push the boundaries of what's possible on the
+            web.
+          </h3>
+        </div>
+      </div>
+    </div>
+    <div id="contactPage">
+      <div id="contactContainer">
+        <h1 id="contactLabel">Contacts</h1>
+        <div id="contactsIcons">
+          <div id="iconandlabelcontainer">
+            <i class="fa-brands fa-facebook-messenger"> </i>
+            <h5>Mark Leo Bostrillo</h5>
+          </div>
+          <div id="iconandlabelcontainer">
+            <i class="fa-solid fa-mobile-screen-button"> </i>
+            <h5>+639953349715</h5>
+          </div>
+          <div id="iconandlabelcontainer">
+            <i class="fa-solid fa-envelope"></i>
+            <h5>markleobostrillo@gmail.com</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div id="footerContentContainer">
+        <div class="footerIconContainer">
+          <i class="fa-brands fa-facebook"></i>
+          <a
+            href="https://www.facebook.com/bostrillomark/"
+            target="_blank"
+            class="footerText"
+            >Mark Leo Bostrillo</a
+          >
+        </div>
+        <div class="footerIconContainer">
+          <i class="fa-brands fa-linkedin footerText"></i>
+          <a
+            href="https://www.linkedin.com/in/mark-leo-bostrillo-2a839b263/"
+            target="_blank"
+            class="footerText"
+            >Mark Leo Bostrillo</a
+          >
+        </div>
+        <div class="footerIconContainer">
+          <i class="fa-brands fa-github footerText"></i>
+          <a
+            href="https://www.https://github.com/poldong1001"
+            target="_blank"
+            class="footerText"
+            >poldong1001</a
+          >
+        </div>
+      </div>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>

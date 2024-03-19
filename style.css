@@ -17,7 +17,12 @@ body {
 /* HEADER-START*/
 header {
   /* background-color: whitesmoke !important; */
-  background-color: rgb(5, 5, 65, 0) !important;
+  /* From https://css.glass */
+  background: rgba(245, 245, 245, 0.25);
+
+  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+  backdrop-filter: blur(7.9px);
+  -webkit-backdrop-filter: blur(7.9px);
   position: fixed;
 
   display: flex;
@@ -31,16 +36,36 @@ header {
   font-size: 25px;
   padding: 30px;
 }
-
+@media only screen and (max-width: 1400px) {
+  header {
+    padding: 20px;
+  }
+}
 #logoName {
   /* color: green; */
+}
+@media only screen and (max-width: 1400px) {
+  #logoName {
+    font-size: 20px;
+  }
 }
 #navLinks {
   display: flex;
   font-size: 20px;
   gap: 30px;
   list-style: none !important;
+  /* text-decoration: none !important; */
   padding-right: 70px;
+}
+.linkPages {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Use the color inherited from parent element */
+}
+.linkPages:hover,
+.linkPages:focus {
+  background-color: rgb(177, 238, 177);
+  border-radius: 5px;
+  padding: 5px;
 }
 @media only screen and (max-width: 1200px) {
   #navLinks {
@@ -61,6 +86,7 @@ header {
     text-align: right;
     text-decoration: none;
     list-style: none;
+    padding-top: 10px;
   }
 }
 #menuBars {
@@ -76,21 +102,30 @@ header {
     /* position: fixed; */
   }
 }
+@media only screen and (max-width: 1401px) {
+  #menuBars {
+    padding-right: 40px;
+  }
+}
 #menuList {
   /* color: red; */
 
   padding: 10px 70px 10px 10px;
   /* From https://css.glass */
-  background: rgba(219, 136, 54, 0.4);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(9.1px);
-  -webkit-backdrop-filter: blur(9.1px);
+  /* background: rgba(219, 136, 54, 0.4); */
+
+  /* backdrop-filter: blur(9.1px); */
+  /* -webkit-backdrop-filter: blur(9.1px); */
   /* display: none !important; */
 }
 @media only screen and (min-width: 1200px) {
   #menuList {
     display: none !important;
+  }
+}
+@media only screen and (max-width: 1401px) {
+  #menuList {
+    padding-right: 40px;
   }
 }
 /* -------------------- */
@@ -100,23 +135,35 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 60%;
+  /* width: 60%; */
 }
 @media only screen and (max-width: 1200px) {
   #landingPage {
+    justify-content: center;
     align-items: center;
   }
 }
 
-#landing-first-div {
+#landFirstCont {
   display: flex;
-  justify-content: space-between;
+  /* gap: 20px; */
+  /* justify-content: space-between; */
 
   /* background-color: blue; */
 }
 @media only screen and (max-width: 1200px) {
-  #landing-first-div {
-    display: block;
+  #landFirstCont {
+    flex-direction: column;
+  }
+}
+#landFirstContFirstChild {
+}
+@media only screen and (max-width: 1200px) {
+  #landFirstContFirstChild {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: center;
   }
 }
 #namePosition {
@@ -124,14 +171,25 @@ header {
   font-weight: bold;
   font-size: 50px;
 }
-
+@media only screen and (max-width: 1200px) {
+  #namePosition {
+    font-size: 35px;
+  }
+}
 #introMessage {
   font-family: Arial, Helvetica, sans-serif;
   width: 500px;
   font-size: 25px;
   color: rgb(78, 75, 75);
+  /* color: rgb(227, 0, 0); */
   text-align: justify;
-  font-weight: bolf;
+  /* font-weight: bold; */
+}
+@media only screen and (max-width: 1200px) {
+  #introMessage {
+    font-size: 20px;
+    width: 300px;
+  }
 }
 .fa-laptop-code {
   color: rgb(111, 114, 114);
@@ -142,8 +200,14 @@ header {
 .fa-linkedin {
   color: rgb(3, 15, 36);
 }
-.fa-linkedin {
+.fa-github {
   color: rgb(3, 15, 36);
+}
+@media only screen and (max-width: 1200px) {
+  .fa-linkedin,
+  .fa-github {
+    font-size: 25px;
+  }
 }
 #profileImageSix {
   height: 400px;
@@ -151,7 +215,15 @@ header {
 }
 #iconDiv {
   display: flex;
-  gap: 20px;
+  /* justify-content: center; */
+
+  gap: 10px;
+}
+@media only screen and (max-width: 1200px) {
+  #iconDiv {
+    /* justify-content: left; */
+    text-align: left;
+  }
 }
 #myPhotoContainer {
 }
@@ -159,16 +231,29 @@ header {
   #myPhotoContainer {
     display: flex;
     justify-content: center;
-    align-items: center;
   }
 }
-#landing-second-div {
+#landSecondCont {
   /* background-color: rgb(5, 5, 40); */
   display: flex;
   justify-content: left;
   align-items: center;
   gap: 20px;
   font-size: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+  #landSecondCont {
+    font-size: 15px;
+  }
+}
+#profileImageSix {
+}
+@media only screen and (max-width: 1200px) {
+  #profileImageSix {
+    width: 70%;
+    height: auto;
+  }
 }
 .fa-html5 {
   color: orangered;
@@ -179,12 +264,12 @@ header {
 .fa-js {
   color: rgb(238, 229, 62);
 }
-
-#aboutPage {
-  background-color: rgb(43, 255, 0) !important;
-}
-#contactPage {
-  background-color: rgb(247, 0, 255) !important;
+@media only screen and (max-width: 1200px) {
+  .fa-html5,
+  .fa-css3,
+  .fa-js {
+    font-size: 25px;
+  }
 }
 
 /* MEDIA QUERRY */

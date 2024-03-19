@@ -1,0 +1,67 @@
+#contactPage {
+  background-color: whitesmoke;
+  height: 100vh !important;
+  display: flex;
+  justify-content: center;
+  /* align-items: flex-end; */
+}
+#contactContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  align-items: center;
+}
+@media only screen and (max-width: 1200px) {
+  #contactContainer {
+    flex-direction: column;
+    /* padding: 30px; */
+    max-width: 200px;
+  }
+}
+#contactLabel {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  color: rgb(255, 85, 0);
+}
+#contactsIcons {
+  display: flex;
+  gap: 50px;
+  color: rgb(45, 44, 44);
+  font-family: Arial, Helvetica, sans-serif;
+}
+@media only screen and (max-width: 1200px) {
+  #contactsIcons {
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    max-width: 200px;
+  }
+}
+#iconandlabelcontainer {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  text-align: center;
+  font-size: 30px;
+}
+@media only screen and (max-width: 1200px) {
+  #iconandlabelcontainer {
+    font-size: 20px;
+    justify-content: center;
+  }
+}
+#contactLabel {
+  color: rgb(216, 80, 12);
+}
+.fa-facebook-messenger {
+  color: rgb(96, 181, 234);
+}
+.fa-mobile-screen-button {
+  color: rgb(5, 136, 183);
+}
+.fa-envelope {
+  color: rgb(236, 64, 64);
+}
