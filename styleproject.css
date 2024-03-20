@@ -1,7 +1,8 @@
 #projectPage {
-  background-color: rgb(217, 8, 8) !important;
+  background-color: whitesmoke;
   height: 100vh !important;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 50px;
 }
